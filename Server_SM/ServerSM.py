@@ -367,6 +367,8 @@ def stack( splitted_request ):
     result = result + "\r\n"
     return result
     
+def zupi( splitted_request):
+    return 666
 operazioni = { 
     'INIT': init ,
     'CLOSE': close ,
@@ -378,7 +380,8 @@ operazioni = {
     'MUL' : mul ,
     'GET' : getReg ,
     'SET' : setReg ,
-    'STACK' : stack
+    'STACK' : stack,
+    'ZUPIZUPI': zupi
 }
 
 if __name__ == '__main__':
